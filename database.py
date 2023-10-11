@@ -1,11 +1,11 @@
 
 def write_to_file(notes):
-    with open('Notes_app/database.txt', 'w') as f:
+    with open('notes_app/database.txt', 'w') as f:
         for note in notes:
             f.write(f"{note['title']}: {note['text']}\n\n")
 
 def read_from_file():
-    with open('Notes_app/database.txt', 'r') as f:
+    with open('notes_app/database.txt', 'r') as f:
         notes=[]
         for line in f:
             x=line.split(':')
